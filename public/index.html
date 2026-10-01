@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Online Exam Portal - V2</h1>
+            <p>Welcome to the Exam</p>
+        </div>
+
+        <div class="question-card">
+
+            <h2>Question 1</h2>
+
+            <p class="question">
+                What is the capital of India?
+            </p>
+
+            <div class="options">
+
+                <label>
+                    <input type="radio" name="answer" value="Mumbai">
+                    Mumbai
+                </label>
+
+                <label>
+                    <input type="radio" name="answer" value="Delhi">
+                    Delhi
+                </label>
+
+                <label>
+                    <input type="radio" name="answer" value="Chennai">
+                    Chennai
+                </label>
+
+            </div>
+
+            <button onclick="submitAnswer()">Submit</button>
+
+            <div id="result"></div>
+
+        </div>
+
+        <div class="server-info">
+            <p>Application Server: <span id="server">Loading...</span></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
